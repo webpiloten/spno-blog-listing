@@ -100,7 +100,7 @@ function spno_blog_listing_shortcode( $attrs = array(), $content = '' ) {
                     $content .= '</div>';
 
                     $content .= '<div class="post-author">';
-                        $content .= get_the_author();
+                        $content .= get_the_author_link();
                     $content .= '</div>';
                 $content .= '</div>';
             $content .= '</div>';
