@@ -91,8 +91,8 @@ function spno_blog_listing_shortcode( $attrs = array(), $content = '' ) {
                     {
                         $text = strip_tags(get_the_content());
 
-                        if (strlen($text)  > 160) {
-                            $text = substr($text, 0, 160) . "...";
+                        if (strlen($text)  > 300) {
+                            $text = substr($text, 0, 300) . "...";
                         }
 
                         $content .= $text;
