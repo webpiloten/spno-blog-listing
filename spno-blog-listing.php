@@ -20,7 +20,7 @@ add_action('init', 'register_spno_blog_listing_styles');
 function spno_blog_listing_shortcode( $attrs = array(), $content = '' ) {
 
     $attrs = array_merge(array(
-        'order' => 'ASC',
+        'order' => 'DESC',
         'orderby' => 'date',
         'showposts' => 3,
         'colclasses' => 'col-sm-6 col-lg-6 col-xl-4'
