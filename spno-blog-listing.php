@@ -54,9 +54,15 @@ function spno_blog_listing_shortcode( $attrs = array(), $content = '' ) {
                         }
 
                         $html = [];
+                        $urls = [get_the_post_thumbnail_url()];
 
                         /** @var DOMElement $img */
                         foreach ( $dom->getElementsByTagName( 'img' ) as $img ) {
+                            if (in_array($img->getAttribute('src'), $urls)) {
+                                continue;
+                            }
+
+                            $urls[] = $img->getAttribute('src');
                             $html[] = $dom->saveHTML( $img );
                         }
 
