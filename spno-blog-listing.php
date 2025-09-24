@@ -92,7 +92,7 @@ function spno_blog_listing_shortcode( $attrs = array(), $content = '' ) {
 
                     $content .= '<div class="post-teaser">';
                     {
-                        $text = strip_tags(get_the_content());
+                        $text = wp_strip_all_tags( get_the_content() );
 
                         if (strlen($text)  > 300) {
                             $text = substr($text, 0, 300) . "...";
