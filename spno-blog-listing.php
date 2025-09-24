@@ -13,10 +13,12 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly
 }
 
+define( 'SPNO_BLOG_LISTING_VERSION', '1.0.0' );
+
 function register_spno_blog_listing_styles() {
-    wp_enqueue_style('spno_blog_listing', plugins_url('public/css/style.css', __FILE__));
+    wp_enqueue_style( 'spno_blog_listing', plugins_url('public/css/style.css', __FILE__), array(), SPNO_BLOG_LISTING_VERSION );
 }
-add_action('init', 'register_spno_blog_listing_styles');
+add_action( 'init', 'register_spno_blog_listing_styles' );
 
 function spno_blog_listing_shortcode( $attrs = array(), $content = '' ) {
 
