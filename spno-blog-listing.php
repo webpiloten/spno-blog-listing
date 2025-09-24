@@ -31,10 +31,10 @@ function spno_blog_listing_shortcode( $attrs = array(), $content = '' ) {
 
     $content .= '<div class="row spno-blog-listing">';
 
-    query_posts ( $attrs );
+    $the_query = new WP_Query( $attrs );
 
-    while (have_posts()) {
-        the_post();
+    while ( $the_query->have_posts() ) {
+        $the_query->the_post();
 
         $content .= '<div class="spno-blog-listing-col' . ' ' . $attrs['colclasses'] .'" role="listitem">';
             $content .= '<div class="card post-box box-standard">';
@@ -110,7 +110,7 @@ function spno_blog_listing_shortcode( $attrs = array(), $content = '' ) {
         $content .= '</div>';
     }
 
-    wp_reset_query();
+    wp_reset_postdata();
 
     $content .= '</div>';
 
