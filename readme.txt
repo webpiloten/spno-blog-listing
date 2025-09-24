@@ -13,13 +13,21 @@ A simple shortcode-based blog listing plugin to easily embed and display your bl
 
 == Description ==
 
-A simple shortcode-based blog listing plugin to easily embed and display your blog posts in an organized, card-style layout on your site.
+A lightweight shortcode that renders a clean, card-style grid of posts. It’s theme-friendly, minimal by default, and fully configurable via familiar WordPress query parameters.
+
+= Features =
+
+* Simple shortcode: [spno_blog_listing]
+* Grid/card layout with customizable column classes (e.g. Bootstrap-style utilities)
+* Works with any theme; ships minimal CSS you can override or extend
+* Supports all query_posts parameters for filtering, sorting, and limiting results
+* Optional hover preview image extracted from the post content
 
 = Usage =
 
-Include the shortcode with the _spno_blog_listing_ identifier. Available options are all parameters from _query_posts_ https://developer.wordpress.org/reference/functions/query_posts/ and the colclasses where you can add custom css classes like bootstrap column breaks (minimal version available in the plugin css).
+Include the shortcode with the _spno_blog_listing_ identifier. Available options are all parameters from query_posts (see https://developer.wordpress.org/reference/functions/query_posts/) and colclasses, where you can add custom CSS classes like Bootstrap column breaks (a minimal version is included in the plugin CSS).
 
-For example, you could use this shortcode to show the latest four blog posts with a four-column layout:
+For example, to show the latest four blog posts in a four-column layout:
 
 <code>
 [spno_blog_listing orderby="date" order="DESC" showposts=4 colclasses="col-sm-6 col-lg-6 col-xl-3"][/spno_blog_listing]
@@ -30,3 +38,11 @@ For example, you could use this shortcode to show the latest four blog posts wit
 ### 1.0.0
 
 - First release of this plugin
+
+== Screenshots ==
+
+1. Den Shortcode nahtlos in die vorhandene Seite einfügen und die jüngsten Blog-Posts anzeigen lassen.
+2. Responsive Layout (anpassbar) über (vordefinierte) CSS Klassen für jedes Endgerät.
+3. Unterstützt mehrere Layouttypen über (vordefinierte) CSS Klassen.
+4. Weiteres Vorschaubild beim Hover aus dem Inhalt des Blog-Beitrags.
+5. Flexible Konfiguration über Shortcode.
