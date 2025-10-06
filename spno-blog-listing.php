@@ -52,7 +52,7 @@ function spno_blog_listing_shortcode( $attrs = array(), $content = '' ) {
 
                         $dom = new DOMDocument();
 
-                        if ( ! $dom->loadHTML( get_the_content() ) ) {
+                        if ( ! $dom->loadHTML( get_the_content(), LIBXML_NOERROR ) ) {
                             return null;
                         }
 
