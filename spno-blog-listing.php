@@ -3,7 +3,7 @@
  * Plugin Name: Blog Listing
  * Description: A simple shortcode-based blog listing plugin to easily embed and display your blog posts in an organized, card-style layout on your site.
  * Version: 1.0.0
- * Author: webpiloten. nonstop online <kontakt@web-piloten.de>
+ * Author: webpiloten
  * Author URI: https://www.web-piloten.de
  * License: GPLv2
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
