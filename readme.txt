@@ -1,4 +1,4 @@
-=== Blog Listing ===
+=== Blog Listing - Show recently blog posts in a card layout ===
 Contributors: webpiloten
 Tags: Blog, listing, shortcode
 Stable tag: 1.0.0

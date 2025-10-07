@@ -1,6 +1,6 @@
 <?php
 /*
- * Plugin Name: Blog Listing
+ * Plugin Name: Blog Listing - Show recently blog posts in a card layout
  * Description: A simple shortcode-based blog listing plugin to easily embed and display your blog posts in an organized, card-style layout on your site.
  * Version: 1.0.0
  * Author: webpiloten
